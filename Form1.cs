@@ -85,6 +85,25 @@ namespace Assemblr
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {//Open file
             openToolStripButton_Click(sender, e);
-        }       
+        }
+
+        private void btnUpdateName_Click(object sender, EventArgs e)
+        {
+            lbDisplayName.Text = tbName.Text;
+            lbDisplayName.Visible = true;
+            btnChangeName.Visible = true;
+            tbName.Text = "";
+
+            lblName.Visible = false;
+            tbName.Visible = false;
+            btnUpdateName.Visible = false;
+        }
+
+        private void btnChangeName_Click(object sender, EventArgs e)
+        {
+            lblName.Visible = true;
+            tbName.Visible = true;
+            btnUpdateName.Visible = true;
+        }
     }
 }

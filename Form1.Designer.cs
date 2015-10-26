@@ -75,9 +75,12 @@
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStart = new System.Windows.Forms.TabPage();
-            this.lblStartPageTitle = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.lblStartPageTitle = new System.Windows.Forms.Label();
+            this.btnUpdateName = new System.Windows.Forms.Button();
+            this.lbDisplayName = new System.Windows.Forms.Label();
+            this.btnChangeName = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -488,8 +491,9 @@
             // 
             this.tpStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tpStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tpStart.Controls.Add(this.btnUpdateName);
             this.tpStart.Controls.Add(this.lblName);
-            this.tpStart.Controls.Add(this.textBox1);
+            this.tpStart.Controls.Add(this.tbName);
             this.tpStart.Controls.Add(this.lblStartPageTitle);
             this.tpStart.Location = new System.Drawing.Point(4, 22);
             this.tpStart.Name = "tpStart";
@@ -499,6 +503,27 @@
             this.tpStart.Text = "Start Page";
             this.tpStart.ToolTipText = "The startup page, showing information, news and help topics";
             this.tpStart.UseVisualStyleBackColor = true;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(6, 196);
+            this.lblName.MinimumSize = new System.Drawing.Size(100, 40);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(100, 40);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbName
+            // 
+            this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.Location = new System.Drawing.Point(107, 201);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(357, 32);
+            this.tbName.TabIndex = 1;
+            this.tbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblStartPageTitle
             // 
@@ -514,22 +539,48 @@
             this.lblStartPageTitle.Text = "Welcome to Assemblr";
             this.lblStartPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // btnUpdateName
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 216);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(387, 20);
-            this.textBox1.TabIndex = 1;
+            this.btnUpdateName.Location = new System.Drawing.Point(389, 239);
+            this.btnUpdateName.Name = "btnUpdateName";
+            this.btnUpdateName.Size = new System.Drawing.Size(75, 41);
+            this.btnUpdateName.TabIndex = 3;
+            this.btnUpdateName.Text = "Update";
+            this.btnUpdateName.UseVisualStyleBackColor = true;
+            this.btnUpdateName.Click += new System.EventHandler(this.btnUpdateName_Click);
             // 
-            // lblName
+            // lbDisplayName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(6, 216);
-            this.lblName.MinimumSize = new System.Drawing.Size(100, 20);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(100, 20);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name";
+            this.lbDisplayName.AutoSize = true;
+            this.lbDisplayName.BackColor = System.Drawing.Color.Transparent;
+            this.lbDisplayName.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDisplayName.ForeColor = System.Drawing.Color.Olive;
+            this.lbDisplayName.Location = new System.Drawing.Point(379, 0);
+            this.lbDisplayName.MaximumSize = new System.Drawing.Size(350, 40);
+            this.lbDisplayName.MinimumSize = new System.Drawing.Size(300, 40);
+            this.lbDisplayName.Name = "lbDisplayName";
+            this.lbDisplayName.Size = new System.Drawing.Size(300, 40);
+            this.lbDisplayName.TabIndex = 4;
+            this.lbDisplayName.Text = "Name";
+            this.lbDisplayName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbDisplayName.UseCompatibleTextRendering = true;
+            this.lbDisplayName.Visible = false;
+            // 
+            // btnChangeName
+            // 
+            this.btnChangeName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChangeName.FlatAppearance.BorderSize = 0;
+            this.btnChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnChangeName.Location = new System.Drawing.Point(627, 43);
+            this.btnChangeName.Name = "btnChangeName";
+            this.btnChangeName.Size = new System.Drawing.Size(52, 25);
+            this.btnChangeName.TabIndex = 4;
+            this.btnChangeName.Text = "Change";
+            this.btnChangeName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnChangeName.UseVisualStyleBackColor = true;
+            this.btnChangeName.Visible = false;
+            this.btnChangeName.Click += new System.EventHandler(this.btnChangeName_Click);
             // 
             // MainWindow
             // 
@@ -540,6 +591,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(683, 541);
+            this.Controls.Add(this.btnChangeName);
+            this.Controls.Add(this.lbDisplayName);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
@@ -550,7 +603,6 @@
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assemblr";
-            this.TopMost = true;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -612,7 +664,10 @@
         private System.Windows.Forms.TabPage tpStart;
         private System.Windows.Forms.Label lblStartPageTitle;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.Button btnUpdateName;
+        private System.Windows.Forms.Label lbDisplayName;
+        private System.Windows.Forms.Button btnChangeName;
     }
 }
 
