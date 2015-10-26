@@ -1,0 +1,8 @@
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Release\Assemblr.exe.config
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Release\Assemblr.exe
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Release\Assemblr.pdb
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Release\Assemblr.MainWindow.resources
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Release\Assemblr.Properties.Resources.resources
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Release\Assemblr.csproj.GenerateResource.Cache
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Release\Assemblr.exe
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Release\Assemblr.pdb

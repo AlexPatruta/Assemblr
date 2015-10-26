@@ -1,0 +1,14 @@
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Debug\Assemblr.exe.config
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Debug\Assemblr.exe.manifest
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Debug\Assemblr.application
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Debug\Assemblr.exe
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\bin\Debug\Assemblr.pdb
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.MainWindow.resources
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.Properties.Resources.resources
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.csproj.GenerateResource.Cache
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.TrustInfo.xml
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.exe.manifest
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.application
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.exe
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.pdb
+D:\Faculty\AN III\SEM I\SSC\Laborator\Proiect\Assemblr\Assemblr\obj\Debug\Assemblr.csprojResolveAssemblyReference.cache

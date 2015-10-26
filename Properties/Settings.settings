@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Assemblr.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebSite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">www.patruta.xyz</Value>
+    </Setting>
+    <Setting Name="Info" Type="System.String" Scope="User">
+      <Value Profile="(Default)">info.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
