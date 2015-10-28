@@ -21,21 +21,29 @@ namespace Assemblr
                 Application.Exit();
             }            
         }
-        
-        private void newToolStripButton_Click(object sender, EventArgs e)
-        {//New file
-            tabControl1.TabPages.Add("NewTab", "New file");
+        private void AddTab()
+        {
             RichTextBox richCodeEdit = new RichTextBox();
             richCodeEdit.Name = "richCodeEdit";
             richCodeEdit.Anchor = (
-                                    AnchorStyles.Bottom | 
-                                    AnchorStyles.Right  |
-                                    AnchorStyles.Top    |
+                                    AnchorStyles.Bottom |
+                                    AnchorStyles.Right |
+                                    AnchorStyles.Top |
                                     AnchorStyles.Left
                                     );
             richCodeEdit.Dock = DockStyle.Fill;
 
+            TabPage newTabPage = new TabPage();
+            newTabPage.Name = "NewTab";
+            newTabPage.Text = "NewTab";
             tabControl1.TabPages["NewTab"].Controls.Add(richCodeEdit);
+        }
+        int numberOfTabs = 1;
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {//New file
+            AddTab();
+            numberOfTabs += 1;
+            statusStrip1.Text = numberOfTabs.ToString();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
